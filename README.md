@@ -1,6 +1,4 @@
-# webtech
-# Projektstartdokument: Diktiergerät mit lokalem Whisper
-
+# EchoMind
 Oct 9, 2026
 
 Wir bauen ein Web-Diktiergerät: Nutzer sprechen ins Mikrofon, ein Whisper-Modell transkribiert die Aufnahme lokal im Browser, und der erzeugte Text wird als Notiz gespeichert und verwaltet.
