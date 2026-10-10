@@ -5,10 +5,9 @@ Wir bauen ein Web-Diktiergerät: Nutzer sprechen ins Mikrofon, ein Whisper-Model
 
 ## Projektüberblick
 
-- **Arbeitstitel:** Diktaphon (Alternativen: VoiceNotes, Whisperbox)
 - **Idee:** Sprachaufnahme → lokale Transkription → Notiz mit Titel, Text, Sprache und Zeitstempel
 - **Besonderheit:** Das Audio verlässt das Gerät nie. Nur der fertige Text geht ans Backend. Das ist unser Datenschutz-Argument in der Präsentation.
-- **Zielgruppe:** Studierende und alle, die Gedanken schnell festhalten wollen
+- **Zielgruppe:** Studierende
 - **Team:** Ibrahim(s0602066), Kenan(s0601714)
 
 ## Anforderungen der Uni
