@@ -102,34 +102,6 @@ Für die Finalabgabe brauchen wir Frontend- und Backend-Tests, die bei jedem Pus
 
 Das echte Whisper-Modell testen wir nur manuell, weil der Download zu groß und zu langsam für die CI ist.
 
-## Deadlines und Abgaben
-
-Der nächste Termin ist M1 am 18. Oktober, also in neun Tagen. Danach folgt etwa alle drei Wochen ein Milestone, am Ende steht die Finalabgabe am Sonntag, 17. Januar, 23:59 Uhr.
-
-&#91;embedded content: Zeitleiste · 4 Milestones, Finalabgabe, Präsentation\]
-
-| Milestone | Muss erreicht sein | Abzugeben in Moodle |
-| --- | --- | --- |
-| M1 | Thema, Team, GitHub-Repo, Entity-Klasse, Spring-App mit GET-Route auf Beispieldaten | Teammitglieder, Projektname, Übungsgruppe und Dozent, Link zum Backend-Repo (README mit Projektbeschreibung) |
-| M2 | Vue-App gepusht, mindestens eine eigene Komponente mit v-for über Beispiel-Entitäten | Link zum Frontend-Repo |
-| M3 | Frontend und Backend auf Render deployed, Frontend ruft die GET-Route auf | Link zur deployten Backend-API (z. B. die Listenroute) |
-| M4 | PostgreSQL auf Render angebunden, Frontend ruft POST-Route auf und speichert eine Entität | Link zum deployten Frontend |
-| Final | Frontend- und Backend-Tests laufen per GitHub Actions, App ist öffentlich und selbsterklärend nutzbar | Screenshot-Dokumentation: pro Use Case ein Screenshot, der zeigt, wo und wie er umgesetzt ist |
-
-## Grober Ablauf
-
-Die Spracherkennung kommt bewusst erst nach dem Deployment dazu. So läuft das Projekt zu jedem Milestone lauffähig und die riskanteste Komponente blockiert nichts.
-
-1. **Bis M1 (18.10.):** Partner finden und in der Moodle-Gruppenverwaltung eintragen. GitHub-Repo für das Backend anlegen. Spring-Boot-Projekt (Web) mit Klasse `Note` und `GET /api/notes` mit Beispieldaten pushen. README mit Projektbeschreibung schreiben.
-2. **M2 (bis 8.11.):** Vue-Projekt (Vite, TypeScript) in eigenem Repo anlegen. Komponente `NoteList.vue` rendert Beispiel-Notizen mit `v-for`, zunächst mit Dummy-Daten im Code.
-3. **M3 (bis 22.11.):** Backend als Web Service und Frontend als Static Site auf Render deployen. Frontend holt die Notizen per `fetch` von der Backend-URL. CORS einrichten. Hinweis: Auf dem Free-Tarif schläft das Backend ein und braucht beim ersten Aufruf bis zu eine Minute.
-4. **M4 (bis 13.12.):** PostgreSQL-Instanz auf Render anlegen und mit Spring Boot verbinden (JPA, Umgebungsvariablen für die Zugangsdaten). `POST /api/notes` bauen, im Frontend ein Formular zum Anlegen einer Notiz einbauen.
-5. **Dezember bis Weihnachten:** Whisper einbauen: Mikrofon-Aufnahme, transformers.js in einem Web Worker, Fortschrittsanzeige. Aufnahme → Text → Speichern verbinden (UC2 bis UC4).
-6. **Januar bis 17.1.:** PUT, DELETE und Detailansicht, Suche und Export nach Zeit. Backend- und Frontend-Tests fertigstellen, GitHub Actions einrichten. Screenshot-Dokumentation zu jedem Use Case schreiben. Danach Code-Freeze.
-7. **18. bis 22.1.:** Präsentation üben und halten, live auf der Render-URL.
-
-**Arbeitsteilung (Vorschlag):** Eine Person übernimmt das Backend (Spring, Datenbank, Backend-Tests), die andere das Frontend (Vue, Whisper-Anbindung, Frontend-Tests). Deployment, README und Screenshot-Doku teilt ihr euch. Wechselt bei Gelegenheit per Pull Request das Review, damit beide beide Seiten verstehen, denn in der Präsentation müssen beide alles erklären können.
-
 ## Risiken und offene Entscheidungen
 
 | Risiko | Auswirkung | Gegenmaßnahme |
@@ -140,11 +112,4 @@ Die Spracherkennung kommt bewusst erst nach dem Deployment dazu. So läuft das P
 | Render Free schläft ein, DB-Tarif ist begrenzt | Erster Aufruf dauert, Demo wirkt kaputt | Seite vor der Präsentation aufwecken, Ladeanzeige im Frontend, Tarifbedingungen der Datenbank prüfen |
 | Zeitplan rutscht | Milestone verpasst | Whisper erst nach M4 einplanen, Kann-Use-Cases streichen |
 
-**Offene Entscheidungen:**
 
-- Java oder Kotlin im Backend
-- Maven oder Gradle
-- Projektname
-- Wer macht Backend, wer Frontend
-- Welches Whisper-Modell (tiny, base oder small), nach Praxistest im Dezember
-- Optional: Web Speech API als Fallback, wenn das Modell nicht läuft
