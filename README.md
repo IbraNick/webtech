@@ -62,7 +62,7 @@ Das Frontend schickt nur den fertigen Text als JSON an das Spring-Boot-Backend, 
 
 Zwei Repositories: eines für das Backend (hier steht auch die Projektbeschreibung im README), eines für das Frontend.
 
-## Datenmodell und REST-API
+## Entity
 
 Es gibt eine zentrale Entity `Note`. Das reicht für alle Pflicht-Use-Cases und hält das Backend schlank.
 
