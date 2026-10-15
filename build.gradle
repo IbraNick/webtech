@@ -33,3 +33,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+// plain-JAR deaktivieren: fuer den Deploy soll nur das ausfuehrbare Boot-JAR entstehen
+tasks.named('jar') {
+	enabled = false
+}
