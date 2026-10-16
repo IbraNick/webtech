@@ -41,7 +41,7 @@ Die Muss-Use-Cases decken die Pflichtfunktionen der Milestones ab. Die Kann-Use-
 | UC9 | Sprache wählen | Deutsch, Englisch oder automatische Erkennung | Kann | Finale |
 | UC10 | Text kopieren/exportieren | Notiz in die Zwischenablage oder als .txt herunterladen | Kann | Finale |
 | UC11 | !Fallback | Hinweis, wenn der Browser das Modell nicht ausführen kann (z. B. kein Mikrofon-Zugriff) | Kann | Finale |
-| UC12 | Notizen favorisieren und mit Tags versehen | Der Nutzer hat die Möglichkeit Notizen zu favorisieren und selbsterstellte Tags einzufügen | Muss | M2 (Dummy), M3 |
+| UC12 | Notizen favorisieren und mit Tags versehen | Der Nutzer hat die Möglichkeit Notizen zu favorisieren und selbsterstellte Tags einzufügen | Muss | Final |
 
 ## Tech-Stack und Architektur
 
