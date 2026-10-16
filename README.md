@@ -30,17 +30,17 @@ Die Muss-Use-Cases decken die Pflichtfunktionen der Milestones ab. Die Kann-Use-
 
 | Nr. | Use Case | Beschreibung | Prio | Milestone |
 | --- | --- | --- | --- | --- |
-| UC1 | Notizen anzeigen | Liste aller gespeicherten Notizen mit Titel, Datum und Textvorschau | Muss | M2 (Dummy), M3 |
+| UC1 | !Notizen anzeigen | Liste aller gespeicherten Notizen mit Titel, Datum und Textvorschau | Muss | M2 (Dummy), M3 |
 | UC2 | Sprache aufnehmen | Aufnahme per Mikrofon starten und stoppen, Dauer wird angezeigt | Muss | Finale |
 | UC3 | Lokal transkribieren | Whisper läuft im Browser, Fortschritt beim Modell-Download und bei der Transkription sichtbar | Muss | Finale |
 | UC4 | Notiz speichern | Transkribierten Text prüfen, Titel vergeben und per POST speichern | Muss | M4 |
-| UC5 | Notiz ansehen | Detailansicht einer einzelnen Notiz | Muss | Finale |
+| UC5 | !Notiz ansehen | Detailansicht einer einzelnen Notiz | Muss | Finale |
 | UC6 | Notiz bearbeiten | Text und Titel nachträglich korrigieren (Whisper macht Fehler) | Muss | Finale |
 | UC7 | Notiz löschen | Notiz dauerhaft entfernen, mit Bestätigung | Muss | Finale |
-| UC8 | Notizen durchsuchen | Suche nach Stichwort in Titel und Text | Kann | Finale |
+| UC8 | notizen durchsuchen + sortirung  | Suche nach Stichwort in Titel und Text | Kann | Finale |
 | UC9 | Sprache wählen | Deutsch, Englisch oder automatische Erkennung | Kann | Finale |
 | UC10 | Text kopieren/exportieren | Notiz in die Zwischenablage oder als .txt herunterladen | Kann | Finale |
-| UC11 | Fallback | Hinweis, wenn der Browser das Modell nicht ausführen kann (z. B. kein Mikrofon-Zugriff) | Kann | Finale |
+| UC11 | !Fallback | Hinweis, wenn der Browser das Modell nicht ausführen kann (z. B. kein Mikrofon-Zugriff) | Kann | Finale |
 
 ## Tech-Stack und Architektur
 
