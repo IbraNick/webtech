@@ -30,18 +30,17 @@ Die Muss-Use-Cases decken die Pflichtfunktionen der Milestones ab. Die Kann-Use-
 
 | Nr. | Use Case | Beschreibung | Prio | Milestone |
 | --- | --- | --- | --- | --- |
-| UC1 | !Notizen anzeigen | Liste aller gespeicherten Notizen mit Titel, Datum und Textvorschau | Muss | M2 (Dummy), M3 |
-| UC2 | Sprache aufnehmen | Aufnahme per Mikrofon starten und stoppen, Dauer wird angezeigt | Muss | Finale |
-| UC3 | Lokal transkribieren | Whisper läuft im Browser, Fortschritt beim Modell-Download und bei der Transkription sichtbar | Muss | Finale |
-| UC4 | Notiz speichern | Transkribierten Text prüfen, Titel vergeben und per POST speichern | Muss | M4 |
-| UC5 | Notiz duplizieren | Der Nutzer erstellt aus einer vorhandenen Notiz eine neue, unabhängig bearbeitbare Kopie.| Muss | Finale |
-| UC6 | Notiz bearbeiten | Text und Titel nachträglich korrigieren (Whisper macht Fehler) | Muss | Finale |
-| UC7 | Notiz löschen | Notiz dauerhaft entfernen, mit Bestätigung | Muss | Finale |
-| UC8 | Notizen durchsuchen + Sortierung  | Suche nach Stichwort in Titel und Text | Kann | Finale |
-| UC9 | Sprache wählen | Deutsch, Englisch oder automatische Erkennung | Kann | Finale |
-| UC10 | Text kopieren/exportieren | Notiz in die Zwischenablage oder als .txt herunterladen | Kann | Finale |
-| UC11 | !Fallback | Hinweis, wenn der Browser das Modell nicht ausführen kann (z. B. kein Mikrofon-Zugriff) | Kann | Finale |
-| UC12 | Notizen favorisieren und mit Tags versehen | Der Nutzer hat die Möglichkeit Notizen zu favorisieren und selbsterstellte Tags einzufügen | Muss | Final |
+| UC1 | Sprache aufnehmen | Aufnahme per Mikrofon starten und stoppen, Dauer wird angezeigt | Muss | Finale |
+| UC2 | Lokal transkribieren | Whisper läuft im Browser, Fortschritt beim Modell-Download und bei der Transkription sichtbar | Muss | Finale |
+| UC3 | Notiz speichern | Transkribierten Text prüfen, Titel vergeben und per POST speichern | Muss | M4 |
+| UC4 | Notiz duplizieren | Der Nutzer erstellt aus einer vorhandenen Notiz eine neue, unabhängig bearbeitbare Kopie.| Muss | Finale |
+| UC5 | Notiz bearbeiten | Text und Titel nachträglich korrigieren (Whisper macht Fehler) | Muss | Finale |
+| UC6 | Notiz löschen | Notiz dauerhaft entfernen, mit Bestätigung | Muss | Finale |
+| UC7 | Notizen durchsuchen + Sortierung  | Suche nach Stichwort in Titel und Text | Kann | Finale |
+| UC8 | Sprache wählen | Deutsch, Englisch oder automatische Erkennung | Kann | Finale |
+| UC9 | Text kopieren/exportieren | Notiz in die Zwischenablage oder als .txt herunterladen | Kann | Finale |
+| UC10 | !Fallback | Hinweis, wenn der Browser das Modell nicht ausführen kann (z. B. kein Mikrofon-Zugriff) | Kann | Finale |
+| UC11 | Notizen favorisieren und mit Tags versehen | Der Nutzer hat die Möglichkeit Notizen zu favorisieren und selbsterstellte Tags einzufügen | Muss | Final |
 
 ## Tech-Stack und Architektur
 
